@@ -1,7 +1,7 @@
 
 
 <% layout("/layouts/boilerplate")%>
-
+<!-- 
 <div class="row mt-3 ">
     <h1 class="col-6 offset-3 mb-3">Signup on WanderLust </h1>
     <div class="col-6 offset-3 ">
@@ -41,4 +41,119 @@
         <button class="btn btn-success">signup</button>
         </form>
     </div>
+</div> -->
+<div class="container my-5">
+  <div class="row bg-white shadow rounded overflow-hidden mx-auto login-card">
+
+    <!-- Left Side Image -->
+    <div class="col-md-6 p-0 position-relative">
+
+      <img
+        src="/images/signup-banner.png"
+        alt="Travel Banner"
+        class="img-fluid w-100 h-100"
+        style="object-fit: cover; min-height: 650px;"
+      />
+
+      <!-- Overlay -->
+      <div class="image-overlay">
+        <h2 class="hero-title">
+          Join StayFinder <br>
+           Today
+        </h2>
+
+        <p class="hero-text">
+          Create your account to save favorite stays,<br/>
+          Manage bookings, <br/>
+          Explore new destinations.
+        </p>
+
+        <div class="hero-badge">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>
+            Book trusted stays <br>
+            wherever you go
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Right Side Signup Form -->
+    <div class="col-md-6 d-flex align-items-center">
+      <div class="w-100 px-4 px-lg-5 py-5">
+
+        <h1 class="display-5 fw-bold mb-4">Create Account</h1>
+
+        <form action="/signup" method="POST" class="needs-validation" novalidate>
+
+          <div class="mb-3">
+            <label for="username" class="form-label fw-bold">
+              Username
+            </label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              class="form-control form-control-lg"
+              placeholder="Choose a username"
+              required
+            />
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label fw-bold">
+              Email Address
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control form-control-lg"
+              placeholder="Enter your email"
+              required
+            />
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <label for="password" class="form-label fw-bold">
+              Password
+            </label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control form-control-lg"
+              placeholder="Create a strong password"
+              required
+            />
+            <div class="valid-feedback">
+              Password looks strong!
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-success btn-lg w-100">
+            Create Account
+          </button>
+
+          <p class="mt-4 mb-0 text-center">
+            Already have an account?
+            <a href="/login" class="text-decoration-none">
+              Login
+            </a>
+          </p>
+
+        </form>
+
+      </div>
+    </div>
+
+  </div>
 </div>
